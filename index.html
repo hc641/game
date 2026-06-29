@@ -47,7 +47,7 @@ canvas{
 #diff-fill{
   height:100%;border-radius:5px;
   background:linear-gradient(90deg,#4caf50,#ff9800,#f44336);
-  transition:width .4s ease;
+  transition:width .4 ease;
 }
 #diff-level{font-size:13px;color:#888;}
 
@@ -63,7 +63,7 @@ canvas{
   background:#fff;border:3px solid #222;border-radius:16px;
   box-shadow:6px 6px 0 #999;padding:28px 36px;text-align:center;
   min-width:270px;max-width:88vw;
-  animation:popIn .25s cubic-bezier(.34,1.56,.64,1);
+  animation:popIn .25 cubic-bezier(.34,1.56,.64,1);
 }
 @keyframes popIn{from{transform:scale(.7);opacity:0}to{transform:scale(1);opacity:1}}
 @keyframes shake{0%,100%{transform:translateX(0)}20%{transform:translateX(-8px)}40%{transform:translateX(8px)}60%{transform:translateX(-6px)}80%{transform:translateX(6px)}}
@@ -75,7 +75,7 @@ canvas{
   padding:12px 26px;font-size:19px;font-family:'Caveat',cursive;font-weight:700;
   border:2.5px solid #222;border-radius:10px;background:#fff;
   box-shadow:3px 3px 0 #aaa;cursor:pointer;color:#222;
-  transition:transform .08s;
+  transition:transform .08;
 }
 .death-btn:active{transform:translate(2px,2px);box-shadow:1px 1px 0 #aaa}
 .kiss-yes{background:#fff0f5;border-color:#e91e8c;color:#c2185b;box-shadow:3px 3px 0 #f8bbd0;}
@@ -99,7 +99,7 @@ canvas{
   cursor:pointer;border:3px solid #ddd;border-radius:18px;
   padding:18px 24px;background:#fff;box-shadow:4px 4px 0 #ddd;
   display:flex;flex-direction:column;align-items:center;gap:12px;
-  transition:border-color .15s, box-shadow .15s, transform .1s;
+  transition:border-color .15, box-shadow .15, transform .1;
   min-width:160px;
 }
 .char-card:hover{border-color:#e91e8c;box-shadow:4px 4px 0 #f8bbd0;transform:translateY(-2px);}
@@ -111,7 +111,7 @@ canvas{
   font-size:20px;font-family:'Caveat',cursive;font-weight:700;
   border:2.5px solid #333;border-radius:10px;background:#fff;
   box-shadow:3px 3px 0 #bbb;cursor:pointer;color:#222;
-  opacity:.45;pointer-events:none;transition:opacity .2s;
+  opacity:.45;pointer-events:none;transition:opacity .2;
 }
 #char-start-btn.ready{opacity:1;pointer-events:auto;}
 #char-start-btn.ready:active{transform:translate(2px,2px);box-shadow:1px 1px 0 #bbb;}
@@ -144,7 +144,7 @@ canvas{
   <p>选择你的角色</p>
   <div class="char-card" id="the-char-card" onclick="selectChar()">
     <img id="char-preview" src="" alt="角色">
-    <span>超可爱的我 😘</span>
+    <span>瑶瑶 😘</span>
   </div>
   <button id="char-start-btn" onclick="confirmChar()">开始游戏 ▶</button>
   <div id="char-hint-txt">点击角色选择，然后开始！</div>
